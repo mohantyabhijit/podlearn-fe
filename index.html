@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class TA - Video Summary and Q&A</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <h1><span class="material-icons">smart_display</span> Meta Video Summarizer</h1>
+    </div>
+    <div class="container">
+        <div class="left-pane">
+            <input type="text" id="videoInput" placeholder="Paste YouTube video link here">
+            <button id="summarizeBtn"><span class="material-icons">summarize</span> Summarize Video</button>
+            <div id="summary"></div>
+            <div id="qaSection">
+                <h2><span class="material-icons">question_answer</span> Ask questions about the video:</h2>
+                <div id="questionForm">
+                    <input type="text" id="questionInput" placeholder="Type your question here">
+                    <button id="askBtn"><span class="material-icons">send</span> Ask</button>
+                </div>
+                <div id="qaList"></div>
+            </div>
+        </div>
+        <div class="splitter"></div>
+        <div class="right-pane">
+            <div id="videoPlayer"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
